@@ -40,9 +40,9 @@ function createCurPayment() {
 
   if (Number(billAmt) > 0 && Number(tipAmt) >= 0) {
     return {
-      billAmt: billAmt,
-      tipAmt: tipAmt,
-      tipPercent: calculateTipPercent(billAmt, tipAmt),
+      billAmt: +billAmt,
+      tipAmt: +tipAmt,
+      tipPercent: calculateTipPercent(+billAmt, +tipAmt),
     }
   }
 }
