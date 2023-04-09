@@ -22,7 +22,7 @@ describe("Servers test (with setup and tear-down)", function() {
     submitServerInfo();
     updateServerTable();
     expect(serverTbody.childElementCount).toEqual(1);
-    expect(serverTbody.firstElementChild.childElementCount).toEqual(2);
+    expect(serverTbody.firstElementChild.childElementCount).toEqual(3);
   })
 
   afterEach(function() {
